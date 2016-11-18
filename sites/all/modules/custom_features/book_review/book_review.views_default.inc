@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * book_review_view.views_default.inc
+ * book_review.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function book_review_view_views_default_views() {
+function book_review_views_default_views() {
   $export = array();
 
   $view = new view();
