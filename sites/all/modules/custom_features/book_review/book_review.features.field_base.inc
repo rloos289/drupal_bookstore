@@ -65,19 +65,12 @@ function book_review_field_default_field_bases() {
       ),
     ),
     'locked' => 0,
-    'module' => 'list',
+    'module' => 'starrating',
     'settings' => array(
-      'allowed_values' => array(
-        '1 ' => ' 1',
-        '2 ' => ' 2',
-        '3 ' => ' 3',
-        '4 ' => ' 4',
-        '5 ' => ' 5',
-      ),
-      'allowed_values_function' => '',
+      'max_value' => 5,
     ),
     'translatable' => 0,
-    'type' => 'list_text',
+    'type' => 'starrating_rating',
   );
 
   return $field_bases;

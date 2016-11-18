@@ -5,6 +5,7 @@ dependencies[] = ctools
 dependencies[] = features
 dependencies[] = list
 dependencies[] = options
+dependencies[] = starrating
 dependencies[] = strongarm
 dependencies[] = text
 dependencies[] = views

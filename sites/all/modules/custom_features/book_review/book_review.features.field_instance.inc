@@ -98,15 +98,23 @@ function book_review_field_default_field_instances() {
   // Exported field_instance: 'node-book_review-field_rating'.
   $field_instances['node-book_review-field_rating'] = array(
     'bundle' => 'book_review',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'null',
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
+        'module' => 'starrating',
+        'settings' => array(
+          'fill_blank' => 1,
+          'icon_color' => 1,
+          'icon_type' => 'star',
+        ),
+        'type' => 'starrating_rating_formatter',
         'weight' => 2,
       ),
       'teaser' => array(
@@ -119,15 +127,15 @@ function book_review_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_rating',
     'label' => 'Rating',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'options',
+      'active' => 0,
+      'module' => 'starrating',
       'settings' => array(),
-      'type' => 'options_buttons',
+      'type' => 'starrating_rating_widget',
       'weight' => 2,
     ),
   );

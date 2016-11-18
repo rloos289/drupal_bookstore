@@ -28,7 +28,7 @@ function book_review_node_info() {
     'book_review' => array(
       'name' => t('Book Review'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Add a book review'),
       'has_title' => '1',
       'title_label' => t('Book Title'),
       'help' => '',
